@@ -2,7 +2,7 @@
 #### Data Representation and Querying Project 2015
 #### Declan Duffy
 ## Overview
-This project will detail the crime rate per quaterly in different sections of Ireland over the last couple of years based on data recieved from https://data.gov.ie/dataset/recorded-crime-quarterly
+This project will detail the locations of parks in Galway based on data recieved from https://data.gov.ie/data
 ## URI and Versioning
 
 ## Design
