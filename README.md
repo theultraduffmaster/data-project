@@ -42,9 +42,9 @@ Code | Definition | Code | Definition
 
 ###Search for park by name
 Replace Name with the name of any of the parks in Galway 
-*http://www.galway.ie/parks/[Name]*   
+*http://www.galway.ie/galwayparklocatorapi/galway-parks/[Name]*   
 E.G.
-*http://www.galway.ie/parks/[RENMORE-PARK]*   
+*http://www.galway.ie/galwayparklocatorapi/galway-parks/[RENMORE-PARK]*   
 
 **JSON Results by NAME** 
 ```json   
@@ -68,9 +68,9 @@ E.G.
   
 ###Search for park by Area
 Replace Area with the name of the Area in Galway 
-*http://www.galway.ie/parks/[Area]*   
+*http://www.galway.ie/galwayparklocatorapi/galwayparks/[Area]*   
 E.G.
-*http://www.galway.ie/parks/[CITY-WEST]*   
+*http://www.galway.ie/galwayparklocatorapi/galwayparks/[CITY-WEST]*   
 
 **JSON Results by NAME** 
 ```json   
@@ -89,6 +89,32 @@ E.G.
     "NorthITM":"723726.893",   
     "EastIG":"124557.707",   
     "NorthIG":"223697.361"   
+  },]   
+  ```
+  
+### Search for park by Opening Hours
+Replace Opening Hours with the time you want to look for
+*http://www.galway.ie/galwayparklocatorapi/galwayparks/[OpeningHRs]*   
+E.G.
+*http://www.galway.ie/galwayparklocatorapi/galwayparks/[MON-SUN]*   
+
+**JSON Results by NAME** 
+```json   
+[{      
+    "OBJECTID":"14",   
+    "NUMBER":"14",   
+    "NAME":"MILLENNIUM CHILDRENS PARK",   
+    "LOCATION":"NEWCASTLE ROAD, GALWAY",   
+    "AREAOFCITY":"CITY-CENTRE",   
+    "OPENINGHRs":"MON-SUN",   
+    "FACILITIES":"PLAYGROUNDS, PEDESTRIAN WALKWAYS, PICNIC AREA, SKATEBOARDING PARK, SEATING, TOILET FACILITIES, PLANTING AREAS WITH FLOWERS, SHRUBS AND TREES.",   
+    "DESCR":"THIS CITY PARK WAS THE FIRST DEDICATED CHILDRENS PARK IN GALWAY.",   
+    "Lat":"53.276",   
+    "Long":"-9.06",   
+    "EastITM":"529302.83",   
+    "NorthITM":"725605.605",   
+    "EastIG":"129336.803",   
+    "NorthIG":"225576.505"   
   },]   
   ```
 
