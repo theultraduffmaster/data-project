@@ -22,7 +22,24 @@ This dataset was received in Comma Separated Values (CSV) format, and was downlo
 
 ## Design
 
-## Items
+## Methods
+####HTTP Request Methods  
+Method | Definitions
+--------|--------------------------------
+**GET** | Allows user to access data form the server and retreive it to your own device  
+**HEAD** | Retrieve response header   
+**POST** | Allows user to update data that is already at the server and have it recorded there for other users to see       
+**PUT** | Allows user to send new data to the server and have it recorded there for other users to see   
+**DELETE** | Deletes the data at the server
+
+##Status Codes
+Code | Definition | Code | Definition     
+------|--------|--------|----------      
+**200** | Works Ok | **202** | Works Very Well 
+**301** | Moved Permanently  | **302**| Moved Temporarily 
+**303** | Redirect to new location | **400** | Bad Request/ Unknown request 
+**404** | Not Found - Deleted/Moved |  **405** | Invalid Method
+**500** |  Server Error | **503** | Service Unavaiable  
 
 ## Live data
 
