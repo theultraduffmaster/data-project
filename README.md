@@ -101,7 +101,9 @@ E.G.
 ### Search for park by Opening Hours
 
 This is a GET method
+
 Replace Opening Hours with the time you want to look for
+
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[OpeningHRs]*   
 E.G.
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[MON-SUN]*   
@@ -233,7 +235,7 @@ When this app is up and running it will be possible to add new info. But this wi
   ```
   
 ### Delete Method
-On the maintenance end once this app is up and running it will be possible to delete parks if the are constructed over to make something else E.G. a multi storey car park for a shopping centre/ even a shopping cnter itself.
+On the maintenance end once this app is up and running it will be possible to delete parks if the are constructed over to make something else E.G. a multi storey car park for a shopping centre/ even a shopping centre itself.
   
 
 ## Usefullness
