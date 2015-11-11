@@ -1,4 +1,4 @@
-# Galway Park Locater API
+# Galway Park Locator API
 #### Data Representation and Querying Project 2015
 #### Declan Duffy
 ## Overview
@@ -20,7 +20,6 @@ This dataset was received in Comma Separated Values (CSV) format, and was downlo
 -  **East Irish Grid reference system (IG):** In general, neither Ireland nor Great Britain uses latitude or longitude in describing internal geographic locations. Instead grid reference systems are in common usage. East IG therefore refers to coordinates in Galway city itself
 -  **North Irish Grid reference system (IG):** North IG refers to coordinates in Galway city itself
 
-## Design
 
 ## Methods
 ####HTTP Request Methods  
@@ -45,25 +44,51 @@ Code | Definition | Code | Definition
 Replace Name with the name of any of the parks in Galway 
 *http://www.galway.ie/parks/[Name]*   
 E.G.
-*http://www.galway.ie/parks/[]*   
+*http://www.galway.ie/parks/[RENMORE-PARK]*   
 
 **JSON Results by NAME** 
 ```json   
 [{      
-    "OBJECTID":"",   
-    "NUMBER":"",   
-    "NAME":"",   
-    "LOCATION":"",   
-    "AREAOFCITY":"",   
-    "OPENINGHRs":"",   
-    "FACILITIES":"",   
-    "DESCR":"",   
-    "Lat":"",   
-    "Long":"",   
-    "EastITM":"",   
-    "NorthITM":"",   
-    "EastIG":"",   
-    "NorthIG":""   
+    "OBJECTID":"23",   
+    "NUMBER":"16",   
+    "NAME":"RENMORE PARK",   
+    "LOCATION":"RENMORE, GALWAY",   
+    "AREAOFCITY":"CITY-EAST",   
+    "OPENINGHRs":"NO RESTRICTED OPENING HOURS",   
+    "FACILITIES":"2 GAELIC PLAYING PITCHES, 2 SOCCER PLAYING PITCHES, PLANTING AREAS WITH FLOWERS, SHRUBS AND TREES.",   
+    "DESCR":"LOCAL NEIGHBOURHOOD PARK",   
+    "Lat":"53.276",   
+    "Long":"-9.018",   
+    "EastITM":"532136.258",   
+    "NorthITM":"725529.593",   
+    "EastIG":"132170.842",   
+    "NorthIG":"225500.493"   
+  },]   
+  ```
+  
+###Search for park by Area
+Replace Area with the name of the Area in Galway 
+*http://www.galway.ie/parks/[Area]*   
+E.G.
+*http://www.galway.ie/parks/[CITY-WEST]*   
+
+**JSON Results by NAME** 
+```json   
+[{      
+    "OBJECTID":"23",   
+    "NUMBER":"16",   
+    "NAME":"BARNA - LOUGH RUSHEEN PARK",   
+    "LOCATION":"BARNA ROAD, GALWAY",   
+    "AREAOFCITY":"CITY-WEST",   
+    "OPENINGHRs":"NO RESTRICTED OPENING HOURS",   
+    "FACILITIES":"PEDESTRIAN WALKWAYS, CAR PARK/ BUS PARK, WOODLANDS, PICNIC AREA, PLANTING AREA WITH FLOWERS, SHRUBS AND TREES.",   
+    "DESCR":"LOCAL NEIGHBOURHOOD PARK",   
+    "Lat":"53.259",   
+    "Long":"-9.131",   
+    "EastITM":"524524.759",   
+    "NorthITM":"723726.893",   
+    "EastIG":"124557.707",   
+    "NorthIG":"223697.361"   
   },]   
   ```
 
