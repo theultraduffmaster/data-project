@@ -41,6 +41,7 @@ Code | Definition | Code | Definition
 **500** |  Server Error | **503** | Service Unavaiable  
 
 ###Search for park by name
+This is a GET method
 Replace Name with the name of any of the parks in Galway 
 
 *http://www.galway.ie/galwayparklocatorapi/galway-parks/[Name]*   
@@ -68,7 +69,9 @@ E.G.
   ```
   
 ###Search for park by Area
+This is a GET method
 Replace Area with the name of the Area in Galway 
+
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[Area]*   
 E.G.
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[CITY-WEST]*   
@@ -94,6 +97,7 @@ E.G.
   ```
   
 ### Search for park by Opening Hours
+This is a GET method
 Replace Opening Hours with the time you want to look for
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[OpeningHRs]*   
 E.G.
@@ -120,7 +124,9 @@ E.G.
   ```
   
 ### Search for park by Facilities
+This is a GET method
 Replace Facilites with the facilites you want to look for
+
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[Facilites]*   
 E.G.
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[1-soccer-playing-pitch]*   
@@ -148,7 +154,7 @@ E.G.
 ### Search using mutliple parameters
 You can also search using multiple parameters to narrow down your search E.G.
 http://www.galway.ie/galwayparklocatorapi/galwayparks/?[filter]=[parameter]&[filter]=[parameter]
-Is what you would use replacing filter with things like area and opening hours and the parameters to things like "CITY-CENTRE" and "MON-SUN". The ? just starts a query string.
+Is what you would use replacing filter with things like area and opening hours and the parameters to things like "CITY-CENTRE" and "MON-SUN". To search for multiple parameters just use & and add another parameter you want to look for The ? just starts a query string. This is also a GET method.
 
 **JSON Results by Multiple parameters** 
 ```json   
