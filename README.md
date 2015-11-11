@@ -72,7 +72,7 @@ Replace Area with the name of the Area in Galway
 E.G.
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[CITY-WEST]*   
 
-**JSON Results by NAME** 
+**JSON Results by Area** 
 ```json   
 [{      
     "OBJECTID":"23",   
@@ -98,7 +98,7 @@ Replace Opening Hours with the time you want to look for
 E.G.
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[MON-SUN]*   
 
-**JSON Results by NAME** 
+**JSON Results by Opening hours** 
 ```json   
 [{      
     "OBJECTID":"14",   
@@ -115,6 +115,32 @@ E.G.
     "NorthITM":"725605.605",   
     "EastIG":"129336.803",   
     "NorthIG":"225576.505"   
+  },]   
+  ```
+  
+### Search for park by Facilities
+Replace Facilites with the facilites you want to look for
+*http://www.galway.ie/galwayparklocatorapi/galwayparks/[Facilites]*   
+E.G.
+*http://www.galway.ie/galwayparklocatorapi/galwayparks/[1-soccer-playing-pitch]*   
+
+**JSON Results by Facilites** 
+```json   
+[{      
+    "OBJECTID":"26",   
+    "NUMBER":"30",   
+    "NAME":"DOUGHISKA PARK",   
+    "LOCATION":"DOUGHISKA ROAD, GALWAY",   
+    "AREAOFCITY":"CITY-EAST",   
+    "OPENINGHRs":"NO RESTRICTED OPENING HOURS",   
+    "FACILITIES":"1 SOCCER PLAYING PITCH, WALKWAYS, 2 TENNIS COURTS, BASKETBALL COURT, TODDLER PLAYGROUND, ADVENTURE PLAYGROUND, SKATEBOARDING PARK.",   
+    "DESCR":"LOCAL NEIGHBOURHOOD PARK.",   
+    "Lat":"53.283",   
+    "Long":"-8.989",   
+    "EastITM":"534027.432",   
+    "NorthITM":"726260.028",   
+    "EastIG":"134062.422",   
+    "NorthIG":"226231.096"   
   },]   
   ```
 
