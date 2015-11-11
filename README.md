@@ -42,11 +42,12 @@ Code | Definition | Code | Definition
 
 ###Search for park by name
 Replace Name with the name of any of the parks in Galway 
+
 *http://www.galway.ie/galwayparklocatorapi/galway-parks/[Name]*   
 E.G.
 *http://www.galway.ie/galwayparklocatorapi/galway-parks/[RENMORE-PARK]*   
 
-**JSON Results by NAME** 
+**JSON Results by Name** 
 ```json   
 [{      
     "OBJECTID":"23",   
@@ -98,7 +99,7 @@ Replace Opening Hours with the time you want to look for
 E.G.
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[MON-SUN]*   
 
-**JSON Results by Opening hours** 
+**JSON Results by Opening Hours** 
 ```json   
 [{      
     "OBJECTID":"14",   
@@ -143,5 +144,33 @@ E.G.
     "NorthIG":"226231.096"   
   },]   
   ```
+
+### Search using mutliple parameters
+You can also search using multiple parameters to narrow down your search E.G.
+http://www.galway.ie/galwayparklocatorapi/galwayparks/?[filter]=[parameter]&[filter]=[parameter]
+Is what you would use replacing filter with things like area and opening hours and the parameters to things like "CITY-CENTRE" and "MON-SUN". The ? just starts a query string.
+
+**JSON Results by Multiple parameters** 
+```json   
+[{      
+    "OBJECTID":"14",   
+    "NUMBER":"14",   
+    "NAME":"MILLENNIUM CHILDRENS PARK",   
+    "LOCATION":"NEWCASTLE ROAD, GALWAY",   
+    "AREAOFCITY":"CITY-CENTRE",   
+    "OPENINGHRs":"MON-SUN",   
+    "FACILITIES":"PLAYGROUNDS, PEDESTRIAN WALKWAYS, PICNIC AREA, SKATEBOARDING PARK, SEATING, TOILET FACILITIES, PLANTING AREAS WITH FLOWERS, SHRUBS AND TREES.",   
+    "DESCR":"THIS CITY PARK WAS THE FIRST DEDICATED CHILDRENS PARK IN GALWAY.",   
+    "Lat":"53.276",   
+    "Long":"-9.06",   
+    "EastITM":"529302.83",   
+    "NorthITM":"725605.605",   
+    "EastIG":"129336.803",   
+    "NorthIG":"225576.505"   
+  },]   
+  ```
+  
+ > Millenium Park is the only park with opening hour restrictions in Galway.
+
 
 ## Usefullness
