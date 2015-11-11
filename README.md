@@ -41,6 +41,30 @@ Code | Definition | Code | Definition
 **404** | Not Found - Deleted/Moved |  **405** | Invalid Method
 **500** |  Server Error | **503** | Service Unavaiable  
 
-## Live data
+###Search for park by name
+Replace Name with the name of any of the parks in Galway 
+*http://www.galway.ie/parks/[Name]*   
+E.G.
+*http://www.galway.ie/parks/[]*   
+
+**JSON Results by NAME** 
+```json   
+[{      
+    "OBJECTID":"",   
+    "NUMBER":"",   
+    "NAME":"",   
+    "LOCATION":"",   
+    "AREAOFCITY":"",   
+    "OPENINGHRs":"",   
+    "FACILITIES":"",   
+    "DESCR":"",   
+    "Lat":"",   
+    "Long":"",   
+    "EastITM":"",   
+    "NorthITM":"",   
+    "EastIG":"",   
+    "NorthIG":""   
+  },]   
+  ```
 
 ## Usefullness
