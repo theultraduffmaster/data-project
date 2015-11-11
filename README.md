@@ -42,6 +42,7 @@ Code | Definition | Code | Definition
 
 ###Search for park by name
 This is a GET method
+
 Replace Name with the name of any of the parks in Galway 
 
 *http://www.galway.ie/galwayparklocatorapi/galway-parks/[Name]*   
@@ -70,6 +71,7 @@ E.G.
   
 ###Search for park by Area
 This is a GET method
+
 Replace Area with the name of the Area in Galway 
 
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[Area]*   
@@ -97,6 +99,7 @@ E.G.
   ```
   
 ### Search for park by Opening Hours
+
 This is a GET method
 Replace Opening Hours with the time you want to look for
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[OpeningHRs]*   
@@ -124,7 +127,9 @@ E.G.
   ```
   
 ### Search for park by Facilities
+
 This is a GET method
+
 Replace Facilites with the facilites you want to look for
 
 *http://www.galway.ie/galwayparklocatorapi/galwayparks/[Facilites]*   
@@ -178,5 +183,57 @@ Is what you would use replacing filter with things like area and opening hours a
   
  > Millenium Park is the only park with opening hour restrictions in Galway.
 
+### Post Method
+When this app is up and running it will be possible to update the info if anything changes E.G. a park gets named after an important member of the community. But this will only be on the maintanence end.
+
+*http://www.galway.ie/galwayparklocatorapi/galway-parks/[GARY-OLDMAN-PARK]*  
+
+**JSON Results of Renmore Park being renamed to Gary Oldman Park** 
+```json   
+[{      
+    "OBJECTID":"23",   
+    "NUMBER":"16",   
+    "NAME":"GARY OLDMAN PARK",   
+    "LOCATION":"RENMORE, GALWAY",   
+    "AREAOFCITY":"CITY-EAST",   
+    "OPENINGHRs":"NO RESTRICTED OPENING HOURS",   
+    "FACILITIES":"2 GAELIC PLAYING PITCHES, 2 SOCCER PLAYING PITCHES, PLANTING AREAS WITH FLOWERS, SHRUBS AND TREES.",   
+    "DESCR":"LOCAL NEIGHBOURHOOD PARK",   
+    "Lat":"53.276",   
+    "Long":"-9.018",   
+    "EastITM":"532136.258",   
+    "NorthITM":"725529.593",   
+    "EastIG":"132170.842",   
+    "NorthIG":"225500.493"   
+  },]   
+  ```
+
+### Put Method
+When this app is up and running it will be possible to add new info. But this will only be on the maintanence end.
+
+*http://www.galway.ie/galwayparklocatorapi/galway-parks/[new-park]*  
+
+**JSON Results of adding a new Park** 
+```json   
+[{      
+    "OBJECTID":"30",   
+    "NUMBER":"34",   
+    "NAME":"NEW PARK",   
+    "LOCATION":", GALWAY",   
+    "AREAOFCITY":"CITY-",   
+    "OPENINGHRs":"",   
+    "FACILITIES":"",   
+    "Lat":"",   
+    "Long":"",   
+    "EastITM":"",   
+    "NorthITM":"",   
+    "EastIG":"",   
+    "NorthIG":""   
+  },]   
+  ```
+  
+### Delete Method
+On the maintenance end once this app is up and running it will be possible to delete parks if the are constructed over to make something else E.G. a multi storey car park for a shopping centre/ even a shopping cnter itself.
+  
 
 ## Usefullness
